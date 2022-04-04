@@ -7,6 +7,25 @@
     <title>Documento</title>
 </head>
 <body>
+     <!--Form para recopilar información del usuario, la propiedad de for permite asignar la selccion sobre el input
+    y la propiedad de name me permte establecer una llave y un valor para enviar a una base de datos, 
+    placehordel indica que debe ir, y type que tien emultiples funciones, como determinar si va a ser texto(por defecto)
+    , email, password, checkbox,radio, file. Tambien como enviar valores mediante etodo post y get(ambos son inseguros se debe usar encriptacion)
+    y asignar valores por defecto al input mediante value, textarea no permite-->
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input value="Carlos" type="text" id="nombre" name="nombre" placeholder="nombre"/>
+        <br>
+        <label fror ="apellido">Apellido</label>
+        <input value="Meza" type="text" id="apellid" name="apellido" placeholder="apellidos">
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">No utiliza el value para asignar valor por defecto</textarea>
+        <br>
+        <input type="submit"> 
+
+    </form>
     <h1>Practica de HTML</h1>
     <h2>Practica Html</h2>
     <h3>Practica Html</h3>
@@ -25,8 +44,11 @@
     <a target="_blank" href="https://www.google.com">Ir a google</a><br>
 
 
-    <!--Ingresar imagenes mediante img, igual ajustar su tamaño mediante width-->
+    <!--Ingresar imagenes mediante img, igual ajustar su tamaño mediante width and height-->
     <img src="img/portada.jpg"  width="500" height="200"/>
+
+   
+   
 
 
 </body>
